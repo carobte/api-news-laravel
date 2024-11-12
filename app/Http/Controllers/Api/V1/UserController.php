@@ -22,7 +22,7 @@ class UserController extends Controller
             return response()->json([], 204);
         }
 
-        return response()->json(array('users' => $users), 200);
+        return response()->json($users, 200);
     }
 
     /**
